@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "jangir <jangirhus@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
