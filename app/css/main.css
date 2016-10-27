@@ -13,11 +13,11 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  height: 375px;
+  width: 375px;
   top: 0;
   left: 0;
   height: 100%;
-  background: yellow; }
+  background: pink; }
 
 .aside__top {
   -webkit-box-flex: 1;
@@ -25,3 +25,48 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: right; }
+
+.top__person {
+  margin: 1.75em 1.5em 1.5em 1.5em;
+  min-height: 48px; }
+
+.person {
+  position: relative;
+  border: 1px solid #000; }
+
+.person__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 48px;
+  background: red; }
+
+.person__name {
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1em; }
+
+.person__desription {
+  position: relative;
+  display: block;
+  font-size: 0.6em;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.25em;
+  margin: 0.5em 0 0 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 19pt;
+  font-weight: 300;
+  line-height: 1.75em;
+  color: #888; }

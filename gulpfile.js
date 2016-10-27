@@ -5,6 +5,7 @@ var useref = require('gulp-useref');
 var gulpif = require('gulp-if');
 var uglify = require('gulp-uglify');
 var csso = require('gulp-csso');
+var wait = require('gulp-wait');
 var prefixer = require('gulp-autoprefixer');
 
 
@@ -22,6 +23,7 @@ gulp.task('server', function() {
 //styles
 gulp.task('style', function () {
 	return gulp.src('app/sass/**/*.sass')
+	.pipe(wait(1500))
 	.pipe(sass().on('error', sass.logError))
 	.pipe(prefixer({
             browsers: ['last 15 versions']
