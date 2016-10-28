@@ -7,7 +7,7 @@
 	top: 0
 	left: 0
 	height: 100%
-	background: pink
+	background: #222629 url(images/overlay.png)
 
 .aside__top
 	flex-grow: 1
@@ -19,13 +19,12 @@
 
 .person
 	position: relative
-	border: 1px solid #000
+	cursor: default
 
 .person__photo
 	position: absolute
 	top: 0
 	left: 0
-
 	height: 48px
 	width: 48px
 	background: red
@@ -34,10 +33,10 @@
 	position: relative
 	color: #fff
 	font-weight: 600
-	font-size: 1em
+	font-size: 0.9em
 	line-height: 1em
 
-.person__desription
+.person__description
 	position: relative
 	display: block
 	font-size: 0.6em
@@ -45,3 +44,109 @@
 	line-height: 1.25em
 	margin: 0.5em 0 0 0
 
+.nav__item
+	display: block
+
+.nav-item
+	cursor: pointer
+
+.nav-item__link
+	display: block
+	padding: 0.5em 1.5em 0.5em 1.5em
+
+.nav-item__link--active
+	color: #fff
+	background: rgba(0, 0, 0, 0.15)
+	box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125)
+
+.nav-item__title
+	display: block
+	position: relative
+	font-size: 0.8em	
+
+	&:before
+		content: ""
+		display: inline-block
+		position: absolute
+		background-size: cover
+		background-repeat: no-repeat
+		top: 7px
+		left: 0
+		width: 26px
+		height: 26px
+	
+.nav-item__title--intro
+	&:before
+		background-image: url(../images/ico/nav-home.png)
+
+.nav-item__title--portfolio
+	&:before
+		background-image: url(../images/ico/nav-th.png)
+
+.nav-item__title--about
+	&:before
+		background-image: url(../images/ico/nav-user.png)
+
+.nav-item__title--contact
+	&:before
+		background-image: url(../images/ico/nav-contact.png)
+
+.aside__footer
+	padding: 1.5em 2.5em 0.75em 2.5em
+
+.contacts__list
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+	list-style: none
+
+.contacts__name
+	display: none
+
+.contacts__link
+	&:before
+		content: ""
+		display: inline-block
+		background-size: cover
+		background-repeat: no-repeat
+		width: 26px
+		height: 26px
+		transition: 0.5s ease-in-out
+
+.contacts__link--vk
+	&:before
+		background-image: url(../images/ico/con-vk.png)
+	&:hover
+		&:before
+			background-image: url(../images/ico/con-vk-hover.png)
+
+.contacts__link--git
+	&:before
+		background-image: url(../images/ico/con-github.png)
+	&:hover
+		&:before
+			background-image: url(../images/ico/con-github-hover.png)
+
+.contacts__link--email
+	&:before
+		background-image: url(../images/ico/con-mail.png)
+	&:hover
+		&:before
+			background-image: url(../images/ico/con-mail-hover.png)
+
+.contacts__link--skype
+	&:before
+		background-image: url(../images/ico/con-skype.png)
+	&:hover
+		&:before
+			background-image: url(../images/ico/con-skype-hover.png)
+
+.contacts__link--phone
+	&:before
+		background-image: url(../images/ico/con-tel.png)
+	&:hover
+		&:before
+			background-image: url(../images/ico/con-tel-hover.png)
