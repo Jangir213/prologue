@@ -60,6 +60,42 @@ h1, h2, h3, h4, h5, h6 {
   color: #666;
   line-height: 1.5em; }
 
+h1 {
+  font-size: 2em; }
+
+.section {
+  margin: 0;
+  overflow: hidden;
+  padding: 4em 0;
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+          box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+  text-align: center;
+  background-image: url(../images/overlay.png); }
+
+.title {
+  font-size: 2em; }
+
+.description {
+  margin-bottom: 2em; }
+
+.btn {
+  position: relative;
+  display: inline-block;
+  -webkit-border-radius: 0.35em;
+          border-radius: 0.35em;
+  color: #fff;
+  font: inherit;
+  text-decoration: none;
+  padding: 0.75em 2.5em 0.75em 2.5em;
+  background-color: #8ebebc;
+  border: 0;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.15))), url(../images/overlay.png);
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url(../images/overlay.png);
+  background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url(../images/overlay.png);
+  -webkit-transition: background-color 0.35s ease-in-out;
+  transition: background-color 0.35s ease-in-out; }
+
 .aside {
   display: -webkit-box;
   display: -webkit-flex;
@@ -220,3 +256,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .contacts__link--phone:hover:before {
   background-image: url(../images/ico/con-tel-hover.png); }
+
+.main {
+  margin-left: 375px; }
+
+.promo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #81918E;
+  background-size: cover;
+  background-position: center center;
+  padding: 6em 0;
+  text-align: center; }
+
+.promo__header {
+  margin-bottom: 1em; }
