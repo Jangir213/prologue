@@ -1,5 +1,7 @@
 .promo
-	+section()
+	@extend %section
+	padding: 6em 0
+	color: #ddd
 	display: flex
 	flex-direction: column
 	justify-content: center
@@ -9,13 +11,10 @@
 	background-image: url(../images/banner.jpg)
 	background-size: cover
 	background-position: center center
-	padding: 6em 0
-
-	text-align: center
 
 .promo__header
 	margin-bottom: 1em
-	color: #ddd
+	font-size: 2em
 	font-weight: 300
 	line-height: 1.5em
 	letter-spacing: -1px
@@ -24,4 +23,4 @@
 	margin-bottom: 2em
 
 .promo__button
-	+btn()
+	@extend %btn
