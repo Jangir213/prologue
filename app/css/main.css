@@ -1,55 +1,3 @@
-.promo, .portfolio, .about, .contact {
-  margin: 0;
-  overflow: hidden;
-  padding: 4em 0;
-  -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
-          box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
-  text-align: center;
-  background-image: url(../images/overlay.png); }
-
-.portfolio__header, .about__header, .contact__header {
-  font-size: 2em;
-  letter-spacing: -1px;
-  margin-bottom: 1em;
-  color: #666; }
-
-.portfolio__description, .about__description, .contact__description {
-  margin-bottom: 1em; }
-
-.promo__button, .form__btn {
-  position: relative;
-  display: inline-block;
-  -webkit-border-radius: 0.35em;
-          border-radius: 0.35em;
-  color: #fff;
-  font: inherit;
-  text-decoration: none;
-  padding: 0.75em 2.5em 0.75em 2.5em;
-  background-color: #8ebebc;
-  border: 0;
-  cursor: pointer;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.15))), url(../images/overlay.png);
-  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url(../images/overlay.png);
-  background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url(../images/overlay.png);
-  -webkit-transition: background-color 0.35s ease-in-out;
-  transition: background-color 0.35s ease-in-out; }
-
-.form__name, .form__email, .form__message {
-  position: relative;
-  border: 0;
-  outline: 0;
-  background: #fff;
-  -webkit-border-radius: 0.35em;
-          border-radius: 0.35em;
-  padding: 0.5em 1em 0.5em 1em;
-  -webkit-box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
-  border: solid 1px rgba(0, 0, 0, 0.15);
-  font: inherit;
-  color: #888;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out; }
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -112,6 +60,60 @@ table {
   font-weight: 600;
   src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url(../fonts/SourceSansProBold.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+.promo, .portfolio, .about, .contact {
+  margin: 0;
+  overflow: hidden;
+  padding: 4em 0;
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+          box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+  text-align: center;
+  background-image: url(../images/overlay.png); }
+
+.portfolio__header, .about__header, .contact__header {
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin-bottom: 1em;
+  color: #666; }
+
+.portfolio__description, .about__description, .contact__description {
+  margin-bottom: 1em; }
+
+.promo__btn, .form__btn {
+  position: relative;
+  display: inline-block;
+  -webkit-border-radius: 0.35em;
+          border-radius: 0.35em;
+  color: #fff;
+  font: inherit;
+  text-decoration: none;
+  padding: 0.75em 2.5em 0.75em 2.5em;
+  background-color: #8ebebc;
+  border: 0;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.15))), url(../images/overlay.png);
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url(../images/overlay.png);
+  background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.15)), url(../images/overlay.png);
+  -webkit-transition: background-color 0.35s ease-in-out;
+  transition: background-color 0.35s ease-in-out; }
+  .promo__btn:hover, .form__btn:hover {
+    background-color: #9ececc; }
+
+.form__name, .form__email, .form__message {
+  position: relative;
+  border: 0;
+  outline: 0;
+  background: #fff;
+  -webkit-border-radius: 0.35em;
+          border-radius: 0.35em;
+  padding: 0.5em 1em 0.5em 1em;
+  -webkit-box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  font: inherit;
+  color: #888;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out; }
 
 body {
   height: 100%;
