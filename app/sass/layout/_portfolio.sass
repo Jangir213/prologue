@@ -12,13 +12,21 @@
 	display: flex
 	justify-content: center
 	flex-wrap: wrap
-	// flex-direction: column
 
-.portfolio__project
-	margin: 0.9em
+// .portfolio__project
+// 	margin: 0.9em
 
 .project
+	width: 31%
+	margin: 0.5em 1%
 	background-color: #fff
+	+mq($small)
+		width: 48%
+	+mq($xsmall)
+		width: 100%
+
+.project__img
+	width: 100%
 
 .project__title
 	padding: 0 0 0.5em 0
