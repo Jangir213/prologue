@@ -135,6 +135,10 @@ body {
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out; }
 
+.project__img > img, .about__img > img {
+  display: block;
+  width: 100%; }
+
 body {
   height: 100%;
   position: relative;
@@ -413,6 +417,7 @@ body {
           flex-wrap: wrap; }
 
 .project {
+  position: relative;
   width: 31%;
   margin: 0.5em 1%;
   background-color: #fff; }
@@ -427,8 +432,65 @@ body {
   width: 100%; }
 
 .project__title {
-  padding: 0 0 0.5em 0;
+  padding: 0.5em 0;
   font-size: 0.8em; }
+
+.project__info {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 0.8em;
+  color: #fff; }
+
+.project__about {
+  padding: 0.5em 0; }
+
+.project__skills {
+  padding: 0 20px;
+  overflow: hidden; }
+
+.project__skill {
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 2;
+  padding: 0 0.5em;
+  color: #fff;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transform: skew(-20deg);
+      -ms-transform: skew(-20deg);
+          transform: skew(-20deg); }
+  .project__skill > * {
+    display: inline-block;
+    -webkit-transform: skew(20deg);
+        -ms-transform: skew(20deg);
+            transform: skew(20deg); }
+
+.project__link {
+  cursor: pointer;
+  padding: 0.5em 0;
+  width: 100%;
+  background: #31c31c; }
 
 .about {
   background-color: #ecf1f1; }
