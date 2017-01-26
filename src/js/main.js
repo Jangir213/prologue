@@ -1,22 +1,8 @@
-(function (window, document) {
+(function () {
 
-  var project = document.querySelectorAll(".project");
-
-  Array.prototype.forEach.call(project, function (el) {
-    addEvent(el);
+  window.addEventListener('load', function () {
+    $('.scrollspy').scrollSpy({ scrollOffset: 0 });
   });
 
 
-  function addEvent(el) {
-    var info = el.querySelector(".project__info");
-
-    el.addEventListener("mouseenter", function () {
-      info.style.marginLeft = "0";
-    });
-
-    el.addEventListener("mouseleave", function () {
-      info.style.marginLeft = "";
-    });
-  }
-
-})(window, document);
+})();

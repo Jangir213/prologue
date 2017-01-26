@@ -11,7 +11,7 @@ var prefixer = require('gulp-autoprefixer');
 
 //server
 gulp.task('server', function() {
-	gulp.src('app')
+	gulp.src('src')
 	.pipe(server({
 		livereload: true,
 		open: true,
@@ -22,18 +22,18 @@ gulp.task('server', function() {
 
 //styles
 gulp.task('style', function () {
-	return gulp.src('app/sass/**/*.sass')
+	return gulp.src('src/sass/**/*.sass')
 	.pipe(wait(1500))
 	.pipe(sass().on('error', sass.logError))
 	.pipe(prefixer({
             browsers: ['last 15 versions']
         }))
-	.pipe(gulp.dest('app/css'));
+	.pipe(gulp.dest('src/css'));
 });
 
 //build
 gulp.task('build', function () {
-    return gulp.src('app/*.html')
+    return gulp.src('src/*.html')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', csso()))
@@ -42,7 +42,7 @@ gulp.task('build', function () {
 
 
 gulp.task('watch', function () {
-	gulp.watch('app/sass/**/*.sass', ['style']);
+	gulp.watch('src/sass/**/*.sass', ['style']);
 });
 
 gulp.task('default', ['server', 'watch']);
