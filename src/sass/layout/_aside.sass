@@ -8,13 +8,14 @@
 	left: 0
 	height: 100%
 	background: #222629 url(../images/overlay.png)
+	transition: .5s
 	+mq($xlarge)
 		width: 300px
 	+mq($medium)
 		width: 20%
 	+mq($small)
-		display: none
 		width: 275px	
+		margin-left: -275px
 
 .aside__top
 	flex-grow: 1
