@@ -11,6 +11,7 @@
     var cover = document.querySelector('.mobile-menu__cover');
     var aside = document.querySelector('.aside');
     var main = document.querySelector('.main');
+    var body = document.body;
 
     btn.addEventListener('click', toggleMenu);
     cover.addEventListener('click', toggleMenu);
@@ -21,15 +22,15 @@
         main.style.transform = '';
         btn.style.transform = '';
         cover.style.display = '';
+        body.style.overflow = '';
       } else {
         aside.style.transform = 'translateX(275px)';
         main.style.transform = 'translateX(275px)';
         btn.style.transform = 'translateX(275px)';
         cover.style.display = 'block';
+        body.style.overflow = 'hidden';
       }
     }
-
-
   }
 
 })();

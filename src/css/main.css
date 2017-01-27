@@ -96,7 +96,7 @@ body {
       font-size: 17pt; } }
   @media screen and (max-width: 1320px) {
     body {
-      font-size: 17pt; } }
+      font-size: 15pt; } }
   @media screen and (max-width: 640px) {
     body {
       font-size: 14pt; } }
@@ -136,7 +136,7 @@ body {
   width: 375px;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   background: #222629 url(../images/overlay.png);
   -webkit-transition: .5s;
   transition: .5s; }
@@ -350,6 +350,9 @@ body {
   background-image: url(../images/banner.jpg);
   background-size: cover;
   background-position: center center; }
+  @media screen and (max-width: 640px) {
+    .promo {
+      font-size: 1rem; } }
 
 .promo__header {
   margin-bottom: 1em;
@@ -434,6 +437,9 @@ body {
   width: 98%;
   margin: 1%;
   min-height: 14em; }
+
+.form__btn {
+  margin: 1%; }
 
 .footer {
   text-align: center;
