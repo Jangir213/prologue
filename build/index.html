@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page">
+
+	<!-- ASIDE -->
+	<aside class="aside">
+
+		<!-- top -->
+		<div class="aside__top">
+			<div class="top__person person">
+				<img src="images/ava.jpg" alt="my-photo" class="person__photo">
+				<h1 class="person__name">Sherlock Holmes</h1>
+				<span class="person__description">Web developer</span>
+			</div>
+
+			<!-- menu -->
+			<nav class="top__nav nav">
+				<ul class="nav__list">
+					<li class="nav__item nav-item">
+						<a href="#promo" class="nav-item__link">
+							<span class="nav-item__title nav-item__title--intro">Intro</span>
+						</a>
+					</li>
+					<li class="nav__item nav-item">
+						<a href="#portfolio" class="nav-item__link ">
+							<span class="nav-item__title nav-item__title--portfolio">Portfolio</span>
+						</a>
+					</li>
+					<li class="nav__item nav-item">
+						<a href="#about" class="nav-item__link">
+							<span class="nav-item__title nav-item__title--about">About me</span>
+						</a>
+					</li>
+					<li class="nav__item nav-item">
+						<a href="#contact" class="nav-item__link">
+							<span class="nav-item__title nav-item__title--contact">Contact</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- end menu -->
+		</div>
+		<!-- end top -->
+
+		<!-- aside contact -->
+		<div class="aside__footer contacts">
+			<ul class="contacts__list">
+				<li class="contacts__item">
+					<a href="#" class="contacts__link contacts__link--vk"><span class="contacts__name">vk</span></a>
+				</li>
+				<li class="contacts__item">
+					<a href="#" class="contacts__link contacts__link--git"><span class="contacts__name">github</span></a>
+				</li>
+				<li class="contacts__item">
+					<a href="#" class="contacts__link contacts__link--email"><span class="contacts__name">email</span></a>
+				</li>
+				<li class="contacts__item">
+					<a href="#" class="contacts__link contacts__link--skype"><span class="contacts__name">skype</span></a>
+				</li>
+				<li class="contacts__item">
+					<a href="#" class="contacts__link contacts__link--phone"><span class="contacts__name">phone</span></a>
+				</li>
+			</ul>
+		</div>
+		<!-- end aside contact -->
+
+	</aside>
+	<!-- END ASIDE -->
+
+	<div class="main">
+
+		<!-- PROMO -->
+		<section id="promo" class="promo scrollspy">
+			<div class="container">
+				<h1 class="promo__header">Lorem ipsum dolor sit amet,<br> consectetur adipisicing.</h1>
+				<p class="promo__description">Lorem ipsum dolor sit amet, brconsectetur adipisicing elit. Dolores, cum. <br>Lorem ipsum dolor sit amet, consectetur
+					adipisicing elit. </p>
+				<button class="promo__btn">Button</button>
+			</div>
+		</section>
+		<!-- END PROMO -->
+
+		<!-- PORTFOLIO -->
+		<section id="portfolio" class="portfolio scrollspy">
+			<div class="container">
+				<h2 class="portfolio__header">Portfolio</h2>
+				<p class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum tenetur in dolore, vero nostrum ipsam.</p>
+
+				<!-- projects -->
+				<div class="porfolio__projects">
+
+					<article class="portfolio__project project">
+						<div class="project__img"><img src="images/pic02.jpg" alt=""></div>
+						<h3 class="project__title">Lorem ipsum.</h3>
+					</article>
+					<article class="portfolio__project project">
+						<div class="project__img"><img src="images/pic02.jpg" alt=""></div>
+						<h3 class="project__title">Lorem ipsum.</h3>
+					</article>
+					<article class="portfolio__project project">
+						<div class="project__img"><img src="images/pic02.jpg" alt=""></div>
+						<h3 class="project__title">Lorem ipsum.</h3>
+					</article>
+
+					<!-- DELETE -->
+					<article class="portfolio__project project">
+						<div class="project__img"><img src="images/pic02.jpg" alt=""></div>
+						<h3 class="project__title">Lorem ipsum.</h3>
+					</article>
+					<article class="portfolio__project project">
+						<div class="project__img"><img src="images/pic02.jpg" alt=""></div>
+						<h3 class="project__title">Lorem ipsum.</h3>
+					</article>
+					<!-- DELETE -->
+
+
+				</div>
+				<!-- end projects -->
+			</div>
+		</section>
+		<!-- END PORTFOLIO -->
+
+		<!-- ABOUT -->
+		<section id="about" class="about scrollspy">
+			<div class="container">
+				<h2 class="about__header">About me</h2>
+				<div class="about__img"><img src="images/pic08.jpg" alt="my photo"></div>
+				<p class="about__description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quia excepturi nulla sed tempore enim. Cumque enim aliquam sint
+					esse quibusdam eum vitae impedit voluptatibus, incidunt exercitationem necessitatibus numquam eligendi expedita, obcaecati
+					eos nemo minus laborum voluptate quo optio? Et deserunt, sed voluptas.
+				</p>
+			</div>
+		</section>
+		<!-- END ABOUT -->
+
+		<!-- CONTACT -->
+		<section id="contact" class="contact scrollspy">
+			<div class="container">
+				<h2 class="contact__header">Contact</h2>
+				<p class="contact__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tenetur cumque eaque deserunt hic saepe!</p>
+
+				<!-- form -->
+				<form class="contact__form form">
+					<input type="text" name="name" placeholder="Name" class="form__name">
+					<input type="email" name="email" placeholder="Email" class="form__email">
+					<textarea name="message" placeholder="Message" class="form__message"></textarea>
+					<button class="form__btn">Send message</button>
+				</form>
+				<!-- end form -->
+			</div>
+		</section>
+		<!-- END CONTACT -->
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<p class="footer__license">@ Lorem ipsum dolor sit amet.</p>
+		</footer>
+		<!-- END FOOTER -->
+
+	</div>
+
+	<!--mobile menu-->
+	<div class="mobile-menu">
+		<a class="mobile-menu__btn"></a>
+		<div class="mobile-menu__cover"></div>
+	</div>
+
+	<!--scripts-->
+	<script src="js/libs.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
